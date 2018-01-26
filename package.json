@@ -7,7 +7,8 @@
     "react-dom": "^16.1.0",
     "react-scripts": "1.0.17",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.76.0"
+    "semantic-ui-react": "^0.76.0",
+    "styled-components": "^2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,6 +17,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1"
   }
 }
