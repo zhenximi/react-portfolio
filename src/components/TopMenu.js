@@ -3,6 +3,7 @@ import {
   Menu,
   Container,
   Header,
+  Image,
 } from 'semantic-ui-react';
 
 class TopMenu extends Component {
@@ -17,7 +18,14 @@ class TopMenu extends Component {
       <Container>
         <Menu pointing secondary>
           <Menu.Item as="div">
-            <Header as="h1" >Zhenxi Mi</Header>
+            <Header as="h1" >
+              <Image
+                src="/assets/images/logo.svg"
+                size="small"
+                href="http://zhenxi.design"
+                alt="Zhenxi Mi's Portfolio"
+              />
+            </Header>
           </Menu.Item>
           <Container>
             <Menu.Menu position="right">
