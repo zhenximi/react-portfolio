@@ -2,8 +2,7 @@
 notifications:
   email:
     recipients:
-      - one@example.com
-      - other@example.com
+      - zhenxi.mi@gmail.com
 
     # change is when the repo status goes from pass to fail or vice versa
     on_success: change
@@ -14,5 +13,4 @@ language: node_js
 
 # specify language options
 node_js:
-- '0.10'
-- '0.11'
+- 'node'
