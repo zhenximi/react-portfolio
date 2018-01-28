@@ -30,5 +30,5 @@ deploy:
   provider: firebase
   # options for provider
   token:
-    secure: $FIREBASE_TOKEN
+    secure: FIREBASE_TOKEN
   project: "my-portfolio-1514c"
