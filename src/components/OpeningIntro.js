@@ -21,7 +21,7 @@ const OpeningIntro = () => (
         content={
           <div>
             <p>Full-stack Designer</p>
-            <p>To test text...</p>
+            <p>Some text...</p>
           </div>
         }
         position="bottom center"
@@ -30,6 +30,7 @@ const OpeningIntro = () => (
     <p>
       I Design, Build experiences bring delights and ease.
     </p>
+    <p>Keep learning for building a better world</p>
   </Container>
 );
 
