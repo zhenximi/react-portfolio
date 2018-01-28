@@ -52,5 +52,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  </body><script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCVld3pD5xVavOxhxhwphjz1ujxvFJ9-rg",
+      authDomain: "my-portfolio-1514c.firebaseapp.com",
+      databaseURL: "https://my-portfolio-1514c.firebaseio.com",
+      projectId: "my-portfolio-1514c",
+      storageBucket: "my-portfolio-1514c.appspot.com",
+      messagingSenderId: "451020772460"
+    };
+    firebase.initializeApp(config);
+  </script>
 </html>
