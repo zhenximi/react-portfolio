@@ -19,7 +19,7 @@ node_js:
 ####################
 
 before_deploy:
-- yarn build
+- yarn build && ls
 
 
 ## Deployment options
@@ -29,6 +29,5 @@ deploy:
   # specify the deployment provider
   provider: firebase
   # options for provider
-  token:
-    secure: $FIREBASE_TOKEN
+  token: $FIREBASE_TOKEN
   project: "my-portfolio-1514c"
