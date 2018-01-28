@@ -1,6 +1,7 @@
 language: node_js
-node_js: lts/*
-install: true
+node_js:
+  - "iojs"
+  - "7"
 script:
  — echo “Deploy!!”
 install:
