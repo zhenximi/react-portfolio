@@ -21,7 +21,7 @@ const OpeningIntro = () => (
         content={
           <div>
             <p>Full-stack Designer</p>
-            <p>Text...</p>
+            <p>To test text...</p>
           </div>
         }
         position="bottom center"
