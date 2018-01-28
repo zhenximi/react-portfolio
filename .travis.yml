@@ -1,10 +1,34 @@
+# Set up notification options
+notifications:
+  email:
+    recipients:
+      - zhenxi.mi@gmail.com
+
+    # change is when the repo status goes from pass to fail or vice versa
+    on_success: change
+    on_failure: always
+
+# specify language
 language: node_js
+
+# specify language options
 node_js:
-  - "iojs"
-  - "7"
-script:
- — echo “Deploy!!”
-install:
- — npm install -g firebase-tools
-after_success:
- — firebase deploy — project my-portfolio-1514c — token $FIREBASE_TOKEN
+- 'node'
+
+## begin build steps
+####################
+
+before_deploy:
+- yarn build
+
+
+## Deployment options
+####################
+
+deploy:
+  # specify the deployment provider
+  provider: firebase
+  # options for provider
+  token:
+    secure: $FIREBASE_TOKEN
+  project: "my-portfolio-1514c"
