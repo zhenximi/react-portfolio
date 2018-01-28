@@ -31,3 +31,4 @@ deploy:
   # options for provider
   token: $FIREBASE_TOKEN
   project: "my-portfolio-1514c"
+  skip_cleanup: true
