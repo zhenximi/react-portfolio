@@ -15,6 +15,10 @@ language: node_js
 node_js:
 - '6'
 
+# cache the node_modules folder between builds to save time
+cache:
+  directories:
+  - node_modules
 ## begin build steps
 ####################
 
