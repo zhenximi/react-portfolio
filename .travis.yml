@@ -26,7 +26,7 @@ install:
   - npm install -g codecov
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecovya
+  - codecov
 
 ## begin build steps
 ####################
