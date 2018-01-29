@@ -20,19 +20,21 @@ cache:
   directories:
   - node_modules
 
+## test coverage
+install:
+  - yarn install
+  - npm install -g codecov
+script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecovya
+
 ## begin build steps
 ####################
 
 before_deploy:
 - yarn build && ls
 
-## test coverage
-install:
-  - npm install -g codecov
-script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
-  
+
 ## Deployment options
 ####################
 
