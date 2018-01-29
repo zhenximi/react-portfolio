@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  Container,
   Segment,
   Visibility,
 } from 'semantic-ui-react';
@@ -28,16 +29,28 @@ export default class HomepageLayout extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomVisible={this.hideFixedMenu}
           once={false}
+          style={{
+            height: '500px',
+          }}
         >
-          <Segment
-            textAlign="center"
-            style={{ padding: '1em 0em' }}
-            vertical
+          <Container
+            fluid
+            style={{
+              position: 'absolute',
+              width: '100%',
+              zIndex: '1000',
+            }}
           >
-            <TopMenu />
-          </Segment>
+            <Segment
+              textAlign="center"
+              style={{ padding: '1em 0em' }}
+              vertical
+            >
+              <TopMenu />
+            </Segment>
+          </Container>
+          <OpeningIntro />
         </Visibility>
-        <OpeningIntro />
         <ShowCases />
         <AboutMe />
         <Footer />

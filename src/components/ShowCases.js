@@ -5,7 +5,10 @@ import ImageFrame from './ImageFrame';
 
 const ShowCases = () => (
   <Container>
-    <Segment basic >
+    <Segment
+      style={{ padding: '8em 0em' }}
+      vertical
+    >
       <Grid>
         <Grid.Row stretched >
           <Grid.Column width={10} >

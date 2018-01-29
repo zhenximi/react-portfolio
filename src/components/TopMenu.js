@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Menu,
   Container,
@@ -6,40 +6,38 @@ import {
   Image,
 } from 'semantic-ui-react';
 
-class TopMenu extends Component {
-  state = { activeItem: 'home' }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { activeItem } = this.state;
-
-    return (
+const TopMenu = () => (
+  <Container>
+    <Menu secondary>
+      <Menu.Item as="div">
+        <Header as="h1" >
+          <Image
+            src="/assets/images/logo.svg"
+            size="small"
+            href="http://zhenxi.design"
+            alt="Zhenxi Mi's Portfolio"
+          />
+        </Header>
+      </Menu.Item>
       <Container>
-        <Menu pointing secondary>
-          <Menu.Item as="div">
-            <Header as="h1" >
-              <Image
-                src="/assets/images/logo.svg"
-                size="small"
-                href="http://zhenxi.design"
-                alt="Zhenxi Mi's Portfolio"
-              />
-            </Header>
+        <Menu.Menu position="right">
+          <Menu.Item
+            name="project"
+            as="a"
+            href="#projects"
+          >
+            Projects
           </Menu.Item>
-          <Container>
-            <Menu.Menu position="right">
-              <Menu.Item name="project" active={activeItem === 'project'} onClick={this.handleItemClick}>
-                Projects
-              </Menu.Item>
-              <Menu.Item name="about" active={activeItem === 'about'} onClick={this.handleItemClick}>
-                About
-              </Menu.Item><Menu.Item as="a" >Resume</Menu.Item>
-            </Menu.Menu>
-          </Container>
-        </Menu>
+          <Menu.Item
+            name="about"
+            as="a"
+            href="#about"
+          >
+            About
+          </Menu.Item><Menu.Item as="a" >Resume</Menu.Item>
+        </Menu.Menu>
       </Container>
-    );
-  }
-}
+    </Menu>
+  </Container>
+);
 export default TopMenu;
