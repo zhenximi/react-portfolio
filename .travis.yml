@@ -25,7 +25,7 @@ install:
   - yarn install
   - npm install -g codecov
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter test -- -R spec
   - codecov
 
 ## begin build steps
