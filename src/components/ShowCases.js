@@ -4,7 +4,9 @@ import { Segment, Container, Grid, Card } from 'semantic-ui-react';
 import ImageFrame from './ImageFrame';
 
 const ShowCases = () => (
-  <Container>
+  <Container
+    style={{ height: '100%' }}
+  >
     <Segment
       style={{ padding: '8em 0em' }}
       vertical
